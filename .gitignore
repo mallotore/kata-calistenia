@@ -1,0 +1,9 @@
+*~
+.settings
+*.setting
+.gradle/**/*
+stacktrace.log
+/*.zip
+/plugin.xml
+/*.log
+/build
