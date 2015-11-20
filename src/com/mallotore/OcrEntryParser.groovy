@@ -3,7 +3,6 @@ package com.mallotore
 class OcrEntryParser{
 
 	static final ACCOUNT_NUMBER_LENGTH = 9
-	static final OCR_NUMBER_SIZE = 3
 
 	private final ocrEntry
 
@@ -25,8 +24,8 @@ class OcrEntryParser{
 		def ocrNumber = [][]
 		def positionsToNextNumber = 2
 
-		OCR_NUMBER_SIZE.times { row ->
-			def fromNumberIndex = numberIndex * OCR_NUMBER_SIZE
+		OcrNumber.OCR_NUMBER_SIZE.times { row ->
+			def fromNumberIndex = numberIndex * OcrNumber.OCR_NUMBER_SIZE
 			def toNumberIndex = fromNumberIndex + positionsToNextNumber
 
 			ocrNumber[row] = ocrEntry[row][fromNumberIndex..toNumberIndex]
