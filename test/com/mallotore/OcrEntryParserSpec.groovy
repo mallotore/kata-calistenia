@@ -2,7 +2,7 @@ package com.mallotore
 
 import spock.lang.Specification
 
-class EntryParserSpec extends Specification {
+class OcrEntryParserSpec extends Specification {
 
 
 	static final ocrEntry =["    _  _     _  _  _  _  _ ",
